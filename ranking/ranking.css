@@ -1,0 +1,62 @@
+body,p,h1,h4,ul,li,table,thead,tbody,tr,td,th{padding: 0;margin: 0;}
+body{background:#EFF1F4; }
+ul{list-style: none;}
+table {border-collapse: collapse;cellspacing:0;}
+.ranking_wrap{width:100%;}
+.ranking_wrap .top_wrap{height: 3.1rem;background: no-repeat; background-size:100% 3.1rem ;display: flex;justify-content: left;padding-top: .4rem;box-sizing: border-box;}
+
+.ranking_wrap .top_wrap .picture_box{width:1.4rem;height: 1.2rem;background: rgba(255,255,255,0.5) }
+.top_wrap .picture_box .picture{width:1rem;height: 1rem;margin: .1rem;background: #fff;padding: .1rem;box-sizing: border-box;margin-left: .3rem; }
+.top_wrap .picture_box .picture img{width: .8rem;height: .8rem;display: block;}
+.top_wrap .text_box{font-size: .4rem;font-weight: bold;color: #fff;margin: .1rem .2rem ;}
+.top_wrap .text_box .sub_text{font-size: .2rem;color:rgba(255,255,255,0.80);padding-top:.1rem; }
+
+.ranking_wrap .content_wrap{margin: -1rem .1rem 0  .1rem;background:#EFF1F4;}
+.content_wrap .content_box{background: #fff;color: #000;}
+.content_box .title_box{height: .8rem;line-height: .8rem; display: flex;justify-content: space-between;align-items: center;padding: 0 .2rem;box-sizing: border-box;}
+.content_box .title_box .title{font-size:.4rem;font-weight: bold; }
+.content_box .title_box .more_btn{color: #0687E5;font-size: .24rem; }
+.content_box .title_box .more_btn .more_btn_arow{width: .28rem;height: 0.28rem;vertical-align: middle;margin-left: .1rem;transform: rotate(180deg);}
+.content_box .title_box .more_btn .more_btn_arow.active{transform: rotate(0deg);}
+.content_box .game_list_box{height: 0;overflow: hidden;}
+.content_box.active .game_list_box{height: 100%;overflow: hidden;}
+.content_box.active .more_btn_arow{transform: rotate(0deg) !important;}
+
+.game_list_box .type_list_box{display: flex;justify-content: space-around;border-bottom: 1px solid #EFF1F4;color: rgba(0,0,0,0.8);font-size: .28rem;font-weight: bold;}
+.game_list_box .type_list_box li{height: .8rem;line-height: .8rem;width: 33.3%;text-align: center;}
+.game_list_box .type_list_box li img{width: .44rem;height: .44rem;vertical-align: middle;}
+.game_list_box .type_list_box li img:nth-of-type(1){display: none;}
+.game_list_box .type_list_box li.active img:nth-of-type(1){display: inline-block;}
+.game_list_box .type_list_box li.active img:nth-of-type(2){display: none;}
+
+.game_list_box .detail_list_box{font-size: .24rem;color: rgba(0,0,0,0.7);width: 6.9rem;margin-left: .3rem;margin-bottom: .1rem;}
+.game_list_box .detail_list_box .team_name{width: 3.54rem;}
+.game_list_box .detail_list_box tr{height: .6rem;line-height: .6rem;}
+.game_list_box .detail_list_box tbody tr:nth-of-type(odd){background:rgba(239,241,244,0.5);}
+.game_list_box .detail_list_box tbody tr:nth-of-type(even){background:rgba(239,241,244,1);}
+
+.game_list_box .detail_list_box  .team_name_box{position: relative;text-align: left;display: flex;align-items: center;}
+.team_name_box .icon_ranking{width: .36rem;height: .36rem;display: inline-block;background: center center;background-size: .36rem .36rem;}
+.team_name_box .icon_ranking.up{background-image: url("./img/icon_up@3x.png")}
+.team_name_box .icon_ranking.down{background-image: url("./img/icon_down@3x.png")}
+.team_name_box .icon_ranking.keep{background-image: url("./img/icon_keep@3x.png")}
+.team_name_box .team_img{width: .36rem;height: .36rem;display: inline-block;}
+.team_name_box span{margin: 0 .2rem;}
+
+.tips_wrap{width: 100%;background:rgba(51, 51, 51, 0.95);border-radius: .2rem .2rem 0 0;font-size: .2rem;color:rgba(255, 255, 255, 0.7);padding-bottom: .2rem; position: fixed;bottom: 0rem;left: 0;}
+.tips_wrap .shrink_btn{width: .6rem; height: .6rem;display: block;margin: 0 auto;}
+.tips_wrap .tips_list li{position: relative;margin-left: .4rem;padding-left: .2rem;line-height: .6rem;}
+
+.icon_before{width: .04rem;height: .28rem;border-radius: .08rem;display: block;position: absolute;left: -.2rem;top: .18rem;}
+.icon_before.green{background:#00D399 }
+.icon_before.purple{background:#5E77FD }
+.icon_before.red{background:#EB0618 }
+
+
+
+
+
+
+
+.ranking_wrap.integral .top_wrap{background-image: url("./img/ranking_top_bg@3x.png");}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计分榜</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <link rel="stylesheet" href="./ranking.css">
+</head>
+<body>
+  <div class="ranking_wrap integral">
+    <div class="top_wrap">
+      <div class="picture_box">
+        <div class="picture">
+          <img src="./img/ranking_picture@3x.png">
+        </div>
+      </div>
+      <div class="text_box">
+        <p>Premier Leaague 18/19</p>
+        <p class="sub_text">ranking</p>
+      </div>
+    </div>
+
+    <div class="content_wrap">
+      <div class="content_box">
+        <div class="title_box">
+          <h4 class="title">Group L 2018</h4>
+          <a class="more_btn"><span>SHOW</span><img class="more_btn_arow" src="./img/button_arow@3x.png"/></a>
+        </div>
+        <div class="game_list_box active">
+          <ul class="type_list_box">
+            <li class="active">
+              <img src="./img/icon_generallist@3x.png"/>
+              <img src="./img/icon_generallist@3x.png"/>
+              总榜
+            </li>
+            <li>
+              <img src="./img/icon_homeground%20@3x.png"/>
+              <img src="./img/icon_homeground%20@3x.png"/>
+              主场
+            </li>
+            <li>
+              <img src="./img/icon_kechang@3x.png"/>
+              <img src="./img/icon_kechang@3x.png"/>
+              客场
+            </li>
+          </ul>
+          <table class="detail_list_box" border="0">
+            <thead>
+              <tr>
+                <th class="team_name">球队</th>
+                <th>赛</th>
+                <th>胜</th>
+                <th>平</th>
+                <th>负</th>
+                <th>进:失</th>
+                <th>积分</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="green">
+                <th>
+                  <div class="team_name_box">
+                    <i class="icon_before green"></i>
+                    <span>1</span>
+                    <i class="icon_ranking up"></i>
+                    <img src="" class="team_img">
+                    <span>1212121</span>
+                  </div>
+                </th>
+                <th>赛</th>
+                <th>胜</th>
+                <th>平</th>
+                <th>负</th>
+                <th>进:失</th>
+                <th>积分</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tips_wrap">
+      <img src="./img/zankai@3x.png" class="shrink_btn">
+      <ul class="tips_list">
+        <li>
+          <i class="icon_before green"></i>
+          121212
+        </li>
+        <li>
+          <i class="icon_before green"></i>
+          121212
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./zepto.min.js"></script>
+  <script src="./ranking.js"></script>
+</body>
+</html>
