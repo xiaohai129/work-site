@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计分榜</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <link rel="stylesheet" href="./ranking.css">
+</head>
+<body>
+  <div class="ranking_wrap red_yellow">
+    <div class="top_wrap">
+      <div class="picture_box">
+        <div class="picture">
+          <img src="./img/ranking_picture@3x.png">
+        </div>
+      </div>
+      <div class="text_box">
+        <p>Premier Leaague 18/19</p>
+        <p class="sub_text">ranking</p>
+      </div>
+    </div>
+
+    <div class="content_wrap">
+      <div class="content_box">
+        <div class="game_list_box active" style="height: auto">
+          <ul class="type_list_box">
+            <li class="active" data-index="0">
+              <img src="./img/icon_yellow_card@3x.png"/>
+              <img src="./img/icon_yellow_card@3x.png"/>
+            </li>
+            <li data-index="1">
+              <img src="./img/icon_yellow_red_card@3x.png"/>
+              <img src="./img/icon_yellow_red_card@3x.png"/>
+            </li>
+            <li data-index="2">
+              <img src="./img/icon_red_card@3x.png"/>
+              <img src="./img/icon_red_card@3x.png"/>
+            </li>
+            <li id="type_list_underline"></li>
+          </ul>
+          <table class="detail_list_box red_yellow_list" border="0">
+            <thead>
+              <tr>
+                <th style="width: 3.6rem;padding-left: .38rem">球员</th>
+                <th>球队</th>
+                <th>张</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span>1</span>Schneiderlin，Morgan</td>
+                <td>Everton</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./zepto.min.js"></script>
+  <script src="./ranking.js"></script>
+</body>
+</html>

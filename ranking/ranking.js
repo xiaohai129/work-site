@@ -23,8 +23,12 @@ class Admin {
       console.log(res)
     })
     this.initEvent();
+    this.$dom.find('.content_box .title_box').eq(0).click();
+    this.$dom.find('.tips_wrap').click();
+    this.$dom.find('.type_list_box li').eq(0).click();
   }
   initEvent () {
+    let tipsHeight = this.$dom.find('.tips_wrap').height() - this.$dom.find('.tips_wrap .shrink_btn').height() ;
     this.$dom.find('.content_box .title_box').on('click', function(){
       let $tEl = $(this);
       let $cEl =  $tEl.parent();
@@ -36,7 +40,33 @@ class Admin {
         $cEl.addClass('active')
         $cBtn.text('LESS');
       }
+      return false;
     })
+
+    this.$dom.find('.tips_wrap').on('click',function () {
+      let $tEl = $(this);
+      let isopen = $tEl.attr('isopen');
+      if(isopen == 1){
+        $tEl.css('bottom',0).attr('isopen',0).removeClass('active');
+      }else{
+        $tEl.css('bottom',-tipsHeight).attr('isopen',1).addClass('active');
+      }
+      return false;
+    })
+
+    this.$dom.find('.type_list_box li').on('click', (e) => {
+      let $tEl = $(e.target);
+      let index = $tEl.data('index');
+      if(index >= 0){
+        let $btns = this.$dom.find('.type_list_box li').removeClass('active');
+        $btns.eq(index).addClass('active');
+        let $panels = this.$dom.find('.detail_list_box').css('display','none');
+        $panels.eq(index).css('display','table');
+        this.$dom.find('#type_list_underline').css('left', (33.3*index)+'%')
+      }
+      return false;
+    })
+
   }
   getData () {
    return new Promise((resolve,reject)=>{
